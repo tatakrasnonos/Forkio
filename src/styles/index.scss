@@ -1,11 +1,5 @@
-h1 {
-  font-size: 28px;
-}
-
-img {
-  border: thick solid black;
-}
-
-body {
-  background: green;
-}
+@import "../../node_modules/reset-css/sass/reset";
+@import "_variables";
+@import "_mixins";
+@import "_reset";
+@import 'sections/_header';
