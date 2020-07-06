@@ -13,22 +13,26 @@ function html() {
   return gulp
     .src('./src/index.html')
     .pipe(gulp.dest('./dist'))
-    .pipe(bs.stream({ match: '**/*.html' }));
+    .pipe(bs.stream({
+      match: '**/*.html'
+    }));
 }
 
 // https://github.com/sass/node-sass/issues/1579
 function sass() {
   return (
     gulp
-      .src('./src/styles/**/*.{scss,sass}')
-      .pipe($.debug())
-      .pipe($.sourcemaps.init())
-      .pipe($.sass())
-      .pipe($.concat('styles.min.css'))
-      .pipe($.if(argv.p, $.cleanCss()))
-      .pipe($.sourcemaps.write('.'))
-      .pipe(gulp.dest('./dist/styles'))
-      .pipe(bs.stream({ match: '**/*.css' }))
+    .src('./src/styles/**/*.{scss,sass}')
+    .pipe($.debug())
+    .pipe($.sourcemaps.init())
+    .pipe($.sass())
+    .pipe($.concat('styles.min.css'))
+    .pipe($.if(argv.p, $.cleanCss()))
+    .pipe($.sourcemaps.write('.'))
+    .pipe(gulp.dest('./dist/styles'))
+    .pipe(bs.stream({
+      match: '**/*.css'
+    }))
   );
 }
 
@@ -44,11 +48,15 @@ function js() {
 
 function img() {
   return gulp
-    .src('./src/img/**/*', { since: gulp.lastRun(img) })
+    .src('./src/img/**/*', {
+      since: gulp.lastRun(img)
+    })
     // .pipe($.debug({title: 'img'}))
     .pipe($.imagemin())
     .pipe(gulp.dest('./dist/img'))
-    .pipe(bs.stream({ match: '**/*.{jpg,png}' }));
+    .pipe(bs.stream({
+      match: '**/*.{jpg,png}'
+    }));
 }
 
 function serve() {
@@ -81,4 +89,4 @@ module.exports = {
   serve,
   setWatch,
   default: build
-}
+};

@@ -1,16 +1,12 @@
 @import "../../node_modules/reset-css/sass/reset";
-@import "_variables";
-@import "_mixins";
-@import "_reset";
-<<<<<<< HEAD
-@import 'sections/_header';
-=======
+@import "variables";
+@import "mixins";
+@import "reset";
 @import 'sections/sections';
 @import 'components/components';
 
-.page{
+.page {
     padding: 2em 7vw;
     font-family: 'Lato';
     color: blue;
 }
->>>>>>> f62248224f7119ef9a808e7f3d36432786227bb7
