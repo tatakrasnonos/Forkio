@@ -2,8 +2,11 @@
 @import "_variables";
 @import "_mixins";
 @import "_reset";
-@import 'sections/_header';
+@import 'sections/sections';
+@import 'components/components';
 
 .page{
     padding: 2em 7vw;
+    font-family: 'Lato';
+    color: blue;
 }
