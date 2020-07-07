@@ -1,0 +1,33 @@
+.editor{
+    justify-items: center;
+    display: grid;
+    gap: 2em;
+
+    &__heading{
+        text-transform: uppercase;
+        color: #635C73;   
+        font-weight: bold;
+        font-size: 1.63em;     
+    }
+
+    &__slogan{
+        color: #323232;
+        font-family: 'Lato', sans-serif;
+        font-size: 0.8em;     
+    }
+}
+
+@include breakpoint($xmedium, $medium) {
+    .editor__heading{
+        font-size: 2.6em;
+    }
+    .editor__slogan{
+        font-size: 1.3em;
+    }
+}
+
+// @include breakpoint($large) {
+//     .editor__heading{
+//         font-size: 3.4em;
+//     }
+// }

@@ -5,9 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Forkio</title>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,700&family=Montserrat:wght@400;700&display=swap"
-    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/styles.min.css">
   <script defer src="js/script.min.js"></script>
 </head>
@@ -15,7 +14,7 @@
 <body>
   <div class="page">
 
-    <header>
+    <header class="wrapper">
       <div class="header-container">
         <nav class="navbar">
           <div class="navbar__logo"></div>
@@ -34,24 +33,37 @@
     </header>
 
     <main>
-      <section class="editor">
-        <h2 class="heading heading--medium">Revolutionary editor</h2>
-        <h4>Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim. Sed id metus
-          id quam auctor molestie eget ut augue.</h4>
+      <section class="editor wrapper">
+        <h2 class="editor__heading">Revolutionary editor</h2>
+        <h4 class="editor__slogan">Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim. Sed id metus id quam auctor molestie eget ut augue.</h4>
+        <div class="counters-wrapper">
+          <div class="counters-wrapper__box">
+            <p class='counters-wrapper__btn fas fa-eye'>&nbsp;Watch</p>
+            <p class="counters-wrapper__counter">1,397</p>
+          </div>
+          <div class="counters-wrapper__box">
+            <p class="counters-wrapper__btn fas fa-star">&nbsp;Star</p>
+            <p class="counters-wrapper__counter">21,038</p>
+          </div>
+          <div class="counters-wrapper__box">
+            <p class="counters-wrapper__btn fas fa-code-branch">&nbsp;Fork</p>
+            <p class="counters-wrapper__counter">4,391</p>
+          </div>
+        </div>
       </section>
 
-      <section class="features">
+      <section class="features wrapper">
         <h3 class="heading heading--small">&lt;Here is what you get&gt;</h3>
       </section>
 
-      <section class="testmonials">
+      <section class="testmonials wrapper">
         <h3 class="heading heading--small">People Are Talking About Fork</h3>
       </section>
-
-      <section class="pricing">
-        <h3 class="heading heading--small">Fork Subscription Pricing</h3>
-      </section>
     </main>
+
+    <footer class="wrapper">
+        <h3 class="heading heading--small">Fork Subscription Pricing</h3>
+    </footer>
 
 </body>
 

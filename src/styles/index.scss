@@ -5,8 +5,11 @@
 @import 'sections/sections';
 @import 'components/components';
 
+
 .page {
-    padding: 2em 7vw;
-    font-family: 'Lato';
-    color: blue;
+    font-family: 'Montserrat', sans-serif;
+    min-width: $xs;
+}
+.wrapper{
+    padding: 2em 7vw;    
 }
