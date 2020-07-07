@@ -2,14 +2,15 @@
 @import "variables";
 @import "mixins";
 @import "reset";
-@import 'sections/sections';
-@import 'components/components';
+@import "sections/sections";
+@import "components/components";
 
 
 .page {
     font-family: 'Montserrat', sans-serif;
     min-width: $xs;
 }
-.wrapper{
-    padding: 2em 7vw;    
+
+.wrapper {
+    padding: 2em 7vw;
 }
