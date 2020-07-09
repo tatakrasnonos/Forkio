@@ -1,0 +1,102 @@
+.footer{
+    background-image: url('./../img/footer/bg.jpg');
+    background-size: cover;
+    text-align: center;
+
+    &__price-container{
+        @include gridCentered;
+        gap: 0.8em;
+    }
+
+    &__heading{
+        font-weight: bold;
+        font-size: 1.75em;
+        color: #FFFFFF;
+        margin-bottom: 1.3em; 
+        line-height: 1.5em;
+    }
+
+    &__box{
+        background: rgba($color: white, $alpha: 0.11);
+        color: white;
+        width: 16em;
+
+        &.active{
+            width: 18.7em;
+            background:rgba($color:  #463048, $alpha: .84);
+        }
+
+        &-header{
+            padding: 1.5em 0;
+            background: rgba($color: white, $alpha: 0.06);
+            font-size: 1.5em;
+            text-transform: uppercase;
+
+            &.active{
+                background:rgba($color:  #000000, $alpha: .11);
+                padding: 1.95em 0;
+            }
+        }
+        &-plot{
+            padding: 1.8em 0 3em;
+            height: 22.5em;
+            position: relative;
+
+            &.active{
+                padding-top: 1em;
+                height: 28em;
+            }
+        }
+    }
+}
+
+.price{
+    font-size: 3.75em;
+    margin-bottom: 0.5em;
+
+    &.active{
+        font-size: 5.1em;
+    }
+}
+.frequency{
+    text-transform: uppercase;
+    font-size: 0.85em;
+    position: relative;
+
+    &::after{
+        content: '';
+        position: absolute;
+        width: 60px;
+        height: 5px;
+        top: 220%;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #8D81AC;
+    }
+}
+.description{
+    margin-top: 28%;
+    line-height: 1.75em;
+}
+
+@include breakpoint($xmedium, $medium) {
+    .footer__heading{
+        font-size: 2.6em;
+    }
+
+    .footer__price-container{
+        gap: 0.8em 1em;
+        grid-template-columns: repeat(2, auto);
+    }   
+}
+
+@include breakpoint($large) {
+    .footer__heading{
+        font-size: 3em;
+    }
+
+    .footer__price-container{
+        gap: 0 1em;
+        grid-template-columns: repeat(4, auto);
+    }   
+}
