@@ -8,28 +8,39 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;700&display=swap"
     rel="stylesheet">
+  <link rel="shortcut icon" href="img/header/Logo 1.png" type="image/png">
   <link rel="stylesheet" href="styles/styles.min.css">
   <script defer src="js/script.min.js"></script>
 </head>
 
 <body>
   <div class="page">
+    <nav class="navbar">
+      <a class="navbar__logo" href="#">
+        <div class="navbar__img"></div>
+        <span class="navbar__logo-name">Forkio</span>
+      </a>
+      <ul class="navbar__list">
+        <li class="navbar__item"><a href="#void" class="navbar__link">Overview</a></li>
+        <li class="navbar__item"><a href="#void" class="navbar__link">About Fork</a></li>
+        <li class="navbar__item"><a href="#void" class="navbar__link">Buying Options</a></li>
+        <li class="navbar__item"><a href="#void" class="navbar__link">Support</a></li>
+      </ul>
+      <a href="#void" class="navbar__buy-btn btn">Buy Now</a>
+      <div class="navbar__burger">
+        <div class="navbar__burger-btn"></div>
+      </div>
+    </nav>
 
-    <header class="wrapper">
-      <div class="header-container">
-        <nav class="navbar">
-          <div class="navbar__logo"></div>
-          <ul class="navbar__list"></ul>
-          <div class="btn btn--get navbar__btn"></div>
-        </nav>
-        <div class="intro">
-          <div class="banner">
-            <h1 class="banner__heading">Fork App</h1>
-            <h4 class="banner__slogan">A real gamechanger in the world of web development</h4>
-            <p class="banner__text">v. 2.8 For Mac and Windows</p>
-          </div>
-          <div class="download"></div>
-        </div>
+    <header class="header-container wrapper">
+      <div class="intro">
+        <h1 class="intro__heading">Fork App</h1>
+        <h4 class="intro__slogan">A real gamechanger in the world of web development</h4>
+        <p class="intro__text">v. 2.8 For Mac and Windows</p>
+      </div>
+      <div class="download">
+        <a class="download__btn btn" href="#void">Download for free now</a>
+        <p class="download__btn-tooltip">Unlimited 30-Days Trial Period</p>
       </div>
     </header>
 
@@ -59,45 +70,97 @@
         <h3 class="features__heading">&lt;Here is what you get&gt;</h3>
         <div class="features__box">
           <div class="features__icon">
-            <img src="./img/features/icon1.png" alt="feature icon">              
+            <img src="./img/features/icon1.png" alt="feature icon">
           </div>
           <div class="features__text">
             <p class="features__text--heading">Creatred to Make The Web Better</p>
-            <p class="features__text--description">Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim. Sed id metus id quam auctor molestie eget ut augue.</p>
+            <p class="features__text--description">Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui
+              laoreet vulputate dignissim. Sed id metus id quam auctor molestie eget ut augue.</p>
           </div>
         </div>
         <div class="features__box">
           <div class="features__icon">
-            <img src="./img/features/icon2.png" alt="feature icon">              
+            <img src="./img/features/icon2.png" alt="feature icon">
           </div>
           <div class="features__text">
             <p class="features__text--heading">Incredibly Powerful Tool</p>
-            <p class="features__text--description">Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat.</p>
+            <p class="features__text--description">Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis
+              odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat.
+            </p>
           </div>
         </div>
         <div class="features__box">
           <div class="features__icon">
-            <img src="./img/features/icon3.png" alt="feature icon">              
+            <img src="./img/features/icon3.png" alt="feature icon">
           </div>
           <div class="features__text">
             <p class="features__text--heading">Experimental Stuff</p>
-            <p class="features__text--description">Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat. </p>
+            <p class="features__text--description">Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis
+              odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat.
+            </p>
           </div>
         </div>
         <div class="features__box">
           <div class="features__icon">
-            <img src="./img/features/icon4.png" alt="feature icon">              
+            <img src="./img/features/icon4.png" alt="feature icon">
           </div>
           <div class="features__text">
             <p class="features__text--heading">Creatred to Make The Web Better</p>
-            <p class="features__text--description">Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat. </p>
+            <p class="features__text--description">Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis
+              odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat.
+            </p>
           </div>
         </div>
         <img class='features__img' src="./img/features/ide.png" alt="IDE">
       </section>
 
-      <section class="testmonials wrapper">
-        <h3 class="heading heading--small">People Are Talking About Fork</h3>          
+      <section class="testimonials wrapper">
+        <h3 class="heading heading--small">People Are Talking About Fork</h3>
+        <div class="testimonials__block-wrapper">
+          <div class="testimonials__block">
+            <div class="testimonials__img-wrapper">
+              <img class="testimonials__img" src="img/testmonials/logo5 1.png" alt="Smashing Magazine">
+            </div>
+            <p class="testimonials__text">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id
+              dignissim magna. Sed varius urna et pulvinar venenatis. </p>
+          </div>
+          <div class="testimonials__block">
+            <div class="testimonials__img-wrapper">
+              <img class="testimonials__img" src="img/testmonials/logo6 1.png" alt="Codrops"></div>
+            <p class="testimonials__text">Donec euismod dolor ut ultricies consequat. Vivamus urna ipsum, rhoncus
+              molestie neque ac, mollis eleifend nibh.</p>
+          </div>
+          <div class="testimonials__block">
+            <div class="testimonials__img-wrapper">
+              <img class="testimonials__img" src="img/testmonials/logo7 1.png" alt="W"></div>
+            <p class="testimonials__text">In efficitur in velit et tempus. Duis nec odio dapibus, suscipit erat
+              fringilla, imperdiet nibh. Morbi tempus auctor felis ac vehicula. </p>
+          </div>
+          <div class="testimonials__block">
+            <div class="testimonials__img-wrapper">
+              <img class="testimonials__img" src="img/testmonials/logo8 1.png" alt="Pixel Buddha">
+            </div>
+            <p class="testimonials__text">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id
+              dignissim magna. Sed varius urna et pulvinar venenatis. </p>
+          </div>
+          <div class="testimonials__block">
+            <div class="testimonials__img-wrapper">
+              <img class="testimonials__img" src="img/testmonials/logo0 1.png" alt="Creative Blog"></div>
+            <p class="testimonials__text">Praesent ut eros tristique, malesuada lectus vel, lobortis massa. Nulla
+              faucibus lorem id arcu consequat faucibus. </p>
+          </div>
+          <div class="testimonials__block">
+            <div class="testimonials__img-wrapper">
+              <img class="testimonials__img" src="img/testmonials/logo123 1.png" alt="THW"></div>
+            <p class="testimonials__text">Fusce pharetra erat id odio blandit, nec
+              pharetra eros venenatis. Pellentesque porttitor cursus massa et vestibulum. </p>
+          </div>
+        </div>
+        <p class="testimonials__additional-text">Duis lobortis arcu sed arcu tincidunt feugiat. Nulla nisi mauris,
+          facilisis
+          vitae aliquet id, imperdiet quis nibh. Donec eget elit eu libero tincidunt consequat nec elementum orci. Cum
+          sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+        <hr class="testimonials__line">
       </section>
     </main>
 
