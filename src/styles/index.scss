@@ -7,10 +7,28 @@
 
 
 .page {
-    font-family: 'Montserrat', sans-serif;
-    min-width: $xs;
+  font-family: 'Montserrat', sans-serif;
+  min-width: $xs;
 }
 
 .wrapper {
-    padding: 2em 7vw;
+  padding: 2em 7vw;
+}
+
+.btn {
+  padding: 11.5px 34px;
+  border-radius: 40px;
+  font-weight: bold;
+  font-size: 16px;
+  white-space: nowrap;
+  color: #FFFFFF;
+  background: #8D81AC;
+  border: 1px solid transparent;
+  text-transform: capitalize;
+
+  &:hover {
+    color: #8D81AC;
+    background: #fff;
+    border: 1px solid #8D81AC;
+  }
 }
