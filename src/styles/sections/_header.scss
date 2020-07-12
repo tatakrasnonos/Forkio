@@ -1,6 +1,5 @@
 .header-container {
   position: relative;
-  margin-bottom: 100px;
   min-height: 680px;
   background: url('../img/header/header-bg.jpg') center no-repeat;
   background-size: cover;
@@ -30,22 +29,6 @@
     text-align: center;
     text-transform: uppercase;
     color: #848E97;
-  }
-}
-
-.download {
-  display: grid;
-  row-gap: 20px;
-  place-content: center;
-  position: absolute;
-  bottom: -52px;
-  left: 50%;
-  transform: translateX(-50%);
-
-  &__btn-tooltip {
-    font-size: 14px;
-    color: #848E97;
-    text-align: center;
   }
 }
 

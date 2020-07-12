@@ -1,6 +1,15 @@
 .testimonials {
-  background: url('../img/testmonials/testmonials-bg.png') center no-repeat;
+  background: url('../img/testmonials/testmonials-bg.png') center no-repeat, #4c3b4e;
   background-size: cover;
+
+  &__heading {
+    margin: 1.2em 0;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    color: #fff;
+    text-align: center;
+  }
 
   &__block-wrapper {
     display: flex;
@@ -56,6 +65,10 @@
 @include breakpoint($xmedium, $medium) {
   .testimonials {
 
+    &__heading {
+      font-size: 42px;
+    }
+
     &__block-wrapper {
       justify-content: space-between;
     }
@@ -87,6 +100,10 @@
 
 @include breakpoint(0, $s) {
   .testimonials {
+
+    &__heading {
+      font-size: 36px;
+    }
 
     &__block-wrapper {
       justify-content: center;
