@@ -3,7 +3,6 @@
 @import "mixins";
 @import "reset";
 @import "sections/sections";
-@import "components/components";
 
 .page {
   font-family: 'Montserrat', sans-serif;
@@ -24,18 +23,30 @@
     background: #8D81AC;
     border: 2px solid transparent;
     font-weight: bold;
-
     font-size: 1.1em;
 
     @include breakpoint($medium) {
       font-size: 1.3em;
     }
+  }
 
-    &:hover {
-      background-color: white;
-      color: #8D81AC;
-      border-color: #8D81AC;
+  &--buy {
+    background: #8D81AC;
+    border: 1px solid transparent;
+    font-size: 1em;
+    font-weight: bold;
+    white-space: nowrap;
+
+    @include breakpoint(0, $medium) {
+      font-size: 0.9375em;
     }
+  }
+
+  &--get:hover,
+  &--buy:hover {
+    background-color: white;
+    color: #8D81AC;
+    border-color: #8D81AC;
   }
 
   &--purchase {

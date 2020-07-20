@@ -12,7 +12,7 @@
     margin-right: auto;
 
     &:hover .navbar__img {
-      background-image: url('../img/header/logo-hover 1.png');
+      background-image: url('../img/header/logo-hover.png');
     }
 
     &:hover .navbar__logo-name {
@@ -23,7 +23,7 @@
   &__img {
     width: 43px;
     height: 41px;
-    background-image: url('../img/header/logo 1.png');
+    background-image: url('../img/header/logo.png');
   }
 
   &__logo-name {
@@ -74,7 +74,7 @@
   }
 }
 
-@include breakpoint(0, $s) {
+@include breakpoint(0, $xmedium) {
   .navbar {
     justify-content: space-between;
     position: relative;
@@ -160,15 +160,6 @@
   }
 }
 
-@include breakpoint($xmedium, $additional) {
-
-  .navbar {
-    &__item {
-      margin: 0 15px;
-    }
-  }
-}
-
 @include breakpoint($xmedium, $medium) {
 
   .navbar {
@@ -182,6 +173,19 @@
       margin: 0 auto;
       position: absolute;
       bottom: 18px;
+    }
+  }
+}
+
+@include breakpoint($xmedium, $additional) {
+
+  .navbar {
+    &__item {
+      margin: 0 15px;
+    }
+
+    &__link {
+      font-size: 14px;
     }
   }
 }
