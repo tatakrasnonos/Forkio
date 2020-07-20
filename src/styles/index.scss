@@ -11,6 +11,10 @@
 
 .wrapper {
   padding: 2em 7vw;
+
+  @include breakpoint($xlarge) {
+    padding: 2em calc((100% - 1200px) / 2);
+  }
 }
 
 .btn {
