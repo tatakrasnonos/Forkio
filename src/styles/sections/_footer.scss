@@ -5,6 +5,7 @@
 
     &__price-container{
         @include gridCentered;
+        justify-content: center;
         gap: .8em;
     }
 
@@ -14,9 +15,6 @@
         color: #FFFFFF;
         margin-bottom: 1.3em; 
         line-height: 1.5em;
-        @include breakpoint($large) {
-            font-size: 3em;
-        }
     }
 
     &__box{
@@ -104,6 +102,11 @@
 }
 
 @include breakpoint($large) {
+
+    .footer__heading{
+        font-size: 3em;
+    }
+
     .footer__price-container{
         grid-template-columns: repeat(4, auto);
         font-size: 1.2vw;

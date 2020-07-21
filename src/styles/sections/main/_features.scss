@@ -1,5 +1,5 @@
 .features{
-    padding: 2em 7vw;
+    padding: 2em 0 2em 7vw;
     display: grid;
 
     gap: 3em;
@@ -10,11 +10,13 @@
         color: #8D81AC;
         font-weight: bold;
         justify-self: center;
+        padding-right: 7vw;
     }
 
     &__box{
         display: grid;
         line-height: 1.2em;
+        padding-right: 7vw;
     }
 
     &__text--heading{
@@ -56,6 +58,7 @@
 @include breakpoint($large) {
     .features{
         padding-top: 4em;
+        overflow-x: hidden;
         background: #F4F4F4;
         gap: 1.5em;
         align-items: center;
@@ -66,9 +69,13 @@
             "feature4 img" auto
             / 50% 50%;
         &__heading{
-            font-size: 3em;
+            font-size: 3.5vw;
             align-self: flex-start;
+            justify-self: flex-start;
+            text-align: left;
+            line-height: 1.2;
             grid-area: heading;
+            padding-right: 3vw;
         }
 
         &__img{
@@ -77,6 +84,7 @@
 
         &__box{
             margin-right: 0;
+            padding-right: 0;
 
             &:first-of-type{
                 grid-area: feature1;
