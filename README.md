@@ -35,7 +35,7 @@ __Задачи:__
 В качестве основы для проекта был использован репозиторий с уже настроенной системой сборки https://github.com/cyberbiont/build-system-students/blob/master/gulpfile.js
 
 # Ссылка на Github Pages:
-https://tamianka9.github.io/Forkio/
+https://tatakrasnonos.github.io/Forkio/
 
 
 
